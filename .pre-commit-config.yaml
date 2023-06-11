@@ -1,0 +1,61 @@
+exclude: '.git|.tox|.trash'
+default_stages: [commit]
+fail_fast: true
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-toml
+      - id: check-ast
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-shebang-scripts-are-executable
+        exclude: mpinterfaces_setup.py
+
+
+  - repo: https://github.com/asottile/pyupgrade
+    rev:  v3.4.0
+    hooks:
+    -   id: pyupgrade
+        args: [--py39-plus]
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/asottile/blacken-docs
+    rev: 1.13.0
+    hooks:
+    -   id: blacken-docs
+        additional_dependencies: [black==23.3.0]
+
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.7.0
+    hooks:
+      - id: nbqa-black
+      - id: nbqa-pyupgrade
+        args: [--py39-plus]
+      - id: nbqa-isort
+      - id: nbqa-flake8
+        args: [--ignore=E402]
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+
+  -   repo: https://github.com/pre-commit/mirrors-mypy
+      rev: 'v1.3.0'  # Use the sha / tag you want to point at
+      hooks:
+      -   id: mypy
+          verbose: True
+          additional_dependencies: ['types-PyYAML', 'types-requests']
+          entry: bash -c 'mypy "$@" || true' --

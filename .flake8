@@ -1,0 +1,7 @@
+[flake8]
+per-file-ignores = __init__.py:F401
+max-line-length = 120
+exclude = .tox,.git
+max-doc-length = 120
+additional_dependencies =  [flake8-isort, flake8-builtins, flake8-docstrings]
+docstring-convention=google
