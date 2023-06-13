@@ -45,6 +45,10 @@ To use the database and interact with it, ensure that you have the following Pyt
 * SCM (Software for Chemistry & Materials) Amsterdam Modeling Suite
 * PLAMS (Python Library for Automating Molecular Simulation) library
 
+**Requirements for Re-running ReaxFF optimization:**
+
+* AMS (Amsterdam Modeling Suite) Python Stack ([more info here](https://www.scm.com/doc/Scripting/Python_Stack/Python_Stack.html))
+
 You can install the required Python packages using pip:
 
 ```shell
@@ -53,7 +57,33 @@ pip install -r requirements.txt
 
 > **Warning**
 >
+> This do not include the ParAMS packages since is available only in AMS Python Stack.
+>
+> See instruction below.
+
+```shell
+export SCM_PYTHONDIR=$(pwd)/venv
+$AMSBIN/amspython --install_venv
+source venv/AMSYYYY.X.venv/bin/activate # Replace YYYY.X with the correct AMS version
+```
+
+> **Warning**
+>
 > Make sure to have the appropriate licenses and installations of SCM Amsterdam Modeling Suite and any other necessary software for running simulations.
+
+### Configure `Material Project API`
+
+**Get *Material Project* API key**
+
+Access to [Material Project](https://materialsproject.org/) and follow the istruction on the [documentation](https://materialsproject.org/api)
+
+#### Make the configuration file
+
+1.  Run the script replacing `<MATERIAL_PROJECT_KEY>` with the Material Project API key.
+
+```shell
+python tools/mpinterface_setup.py -k <MATERIAL_PROJECT_KEY>
+```
 
 ## Folder Structure
 
