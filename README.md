@@ -12,7 +12,7 @@
 [![DOI](https://sandbox.zenodo.org/badge/DOI/10.5281/zenodo.7959121.svg)](TODO)
 
 
-This repository contains the jupyter notebooks used to re-parametrize the ReaxFF force field for LiF, an inorganic compound. 
+This repository contains the jupyter notebooks used to re-parametrize the ReaxFF force field for LiF, an inorganic compound.
 The purpose of the set of notebooks is to facilitate the reparameterization ReaxFF force field for LiF. The results and method used were published in the article [Enhancing ReaxFF for Molecular Dynamics Simulations of Lithium-Ion Batteries: An interactive reparameterization protocol][article-doi].
 
 The database containing the simulation data from *ab initio* simulations obtained from this protocol is published in [Enhancing ReaxFF repository DFT Database][enhancing-reaxFF-database-repository].
