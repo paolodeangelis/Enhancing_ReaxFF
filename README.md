@@ -1,9 +1,9 @@
 # Enhancing the ReaxFF protocol
 
 [![Data FAIR](https://custom-icon-badges.demolab.com/badge/data-FAIR-blue?logo=database\&logoColor=white)](https://www.nature.com/articles/sdata201618)
-[![Made with Python](https://custom-icon-badges.demolab.com/badge/Python-3.9+-blue?logo=python\&logoColor=white)](https://python.org)
+[![Made with Python](https://custom-icon-badges.demolab.com/badge/Python-3.8+-blue?logo=python\&logoColor=white)](https://python.org)
 [![OS - Linux](https://custom-icon-badges.demolab.com/badge/OS-Linux-orange?logo=linux\&logoColor=white)](https://www.linux.org/)
-[![Contributions - close](https://custom-icon-badges.demolab.com/badge/contributions-open-red?logo=code-of-conduct\&logoColor=white)](CONTRIBUTING.md)
+[![Contributions - close](https://custom-icon-badges.demolab.com/badge/contributions-close-red?logo=code-of-conduct\&logoColor=white)](CONTRIBUTING.md)
 [![Code style - black](https://custom-icon-badges.demolab.com/badge/code%20style-black-000000?logo=code\&logoColor=white)](https://github.com/psf/black)
 
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/paolodeangelis/Enhancing_ReaxFF_DFT_database/main.svg)](https://results.pre-commit.ci/badge/github/paolodeangelis/Enhancing_ReaxFF_DFT_database/main.svg)
@@ -19,11 +19,8 @@ The database containing the simulation data from *ab initio* simulations obtaine
 
 The Jupyter Notebooks provided here are designed to facilitate the configuration building, execution of DFT simulations, and optimization of the ReaxFF potential, as described in the workflow diagram shown below. To manage the complexity of the overall operation, we have divided the process into four main Jupyter Notebooks, with an additional notebook that serves as a common module.
 
-<figure>
-    <img src="assets/img/wf.png" alt="workflow">
-    <figcaption><strong>Figure 1</strong>: Protocol workflow.<figcaption>
-<figure> 
 
+![workflow](assets/img/wf.png)
 
 Each notebook can be executed independently, allowing for flexibility in adapting the workflow to optimize the ReaxFF potential for different compounds with minimal modifications.
 
@@ -45,7 +42,7 @@ To use the database and interact with it, ensure that you have the following Pyt
 
 **Minimum Requirements:**
 
-* Python 3.9 or above
+* Python 3.8 or above
 * Atomic Simulation Environment (ASE) library
 * Jupyter Lab
 
@@ -100,59 +97,57 @@ The repository has the following folder structure:
 
 ```bash
 .
-├── CONTRIBUTING.md
 ├── CREDITS.md
 ├── LICENSE
 ├── README.md
 ├── requirements.txt
 ├── assets
 ├── data
-│   ├── LiF.db
-│   ├── LiF.json
-│   └── LiF.yaml
-├── notebooks
-│   ├── browsing_db.ipynb
-│   └── running_simulation.ipynb
-└── tools
-    ├── db
-    ├── plams_experimental
-    └── scripts
+│   └── ffield.reax.optimized.ff
+├── tools
+├── JNB1-Initial_configrations.ipynb
+├── JNB2-Simulations.ipynb
+├── JNB3-Build_traingset.ipynb
+├── preJNB4-ReaxFF_optimization.ipynb
+└── JNB4-ReaxFF_optimization.ipynb
 ```
 
-* `CONTRIBUTING.md`: This file provides guidelines and instructions for contributing to the repository. It outlines the contribution process, coding conventions, and other relevant information for potential contributors.
-* `CREDITS.md`: This file acknowledges and credits the individuals or organizations that have contributed to the repository.
-* `LICENSE`: This file contains the license information for the repository (CC BY 4.0). It specifies the terms and conditions under which the repository's contents are distributed and used.
-* `README.md`: This file.
-* `requirements.txt`: This file lists the required Python packages and their versions. (see [installation section](#installation))
-* `assets`: This folder contains any additional assets, such as images or documentation, related to the repository.
-* `data`: This folder contains the data files used in the repository.
-  * `LiF.db`: This file is the SQLite database file that includes the DFT data used for the ReaxFF force field. Specifically, it contains data related to the inorganic compound LiF.
-  * `LiF.json`: This file provides the database metadata in a human-readable format using JSON.
-  * `LiF.yaml`: This file also contains the database metadata in a more human-readable format, still using YAML.
-* `notebooks`: This folder contains Jupyter notebooks that provide demonstrations and examples of how to use and analyze the database.
-  * `browsing_db.ipynb`: This notebook demonstrates how to handle, select, read, and understand the data points in the `LiF.db` database using the ASE database Python interface. It serves as a guide for exploring and navigating the database effectively.
-  * `running_simulation.ipynb`: In this notebook, you will find an example of how to get a data point from the `LiF.db` database and use it to perform a new simulation. The notebook showcases how to utilize either the [PLAMS](https://www.scm.com/doc/plams/index.html) library or the [AMSCalculator](https://www.scm.com/doc/plams/interfaces/amscalculator.html) and ASE Python library to conduct simulations based on the retrieved data and then store it as a new data point in the `LiF.db` database. It provides step-by-step instructions and code snippets for a seamless simulation workflow.
-* `tools`: This directory contains a collection of Python modules and scripts that are useful for reading, analyzing, and re-running simulations stored in the database. These tools are indispensable for ensuring that this repository adheres to the principles of **I**nteroperability and **R**eusability, as outlined by the [FAIR principles](https://www.go-fair.org/fair-principles/).
-  * `db`: This Python module provides functionalities for handling, reading, and storing data into the database.
-  * `plasm_experimental`: This Python module includes the necessary components for using the `AMSCalculator` with PLASM and the SCM software package, utilizing the ASE API. It facilitates running simulations, performing calculations.
-  * `scripts`: This directory contains additional scripts for dvanced usage scenarios of this repository.
+- `CREDITS.md`: This file acknowledges and credits the individuals or organizations that have contributed to the repository.
+- `LICENSE`: This file contains the license information for the repository (CC BY 4.0). It specifies the terms and conditions under which the repository's contents are distributed and used.
+- `README.md`: This file (repository overview and instructions).
+- `requirements.txt`: This file lists the required Python packages and their versions (see [installation section](#installation)).
+- `assets`: This folder contains any additional assets, such as images or documentation, related to the repository.
+- `data`: This folder contains the data files resulted from this work.
+  - `ffield.reax.optimized.ff`: This file is the optimized ReaxFF resulted from using these Jupyter notebooks, as explained in the related [journal article][article-doi].
+- `notebooks`: This folder contains Jupyter notebooks that provide demonstrations and examples of how to use and analyze the database.
+  - `JNB1-Initial_configurations.ipynb`: Jupyter Notebook where the protocol is initialized by querying the *Materials Project* database, downloading the unit crystals, and producing all the initial configurations for the DFT simulations using the *pymatgen* library.
+  - `JNB2-Simulations.ipynb`: This notebook performs the simulations using BAND and DFTB codes available in the Amsterdam Modeling Suite. The simulations are performed in parallel using the *PLAMS* library and *SLURM* scheduler.
+  - `JNB3-Build_trainingset.ipynb`: Here, the quantities needed for the database are extracted and tuned to favor accuracy on the energy.
+  - `preJNB4-ReaxFF_optimization.ipynb`: This is an auxiliary Notebook where the old ReaxFF is converted into a Python object, and it is possible to select the subset of coefficients related to specific interactions to change during the optimization (e.g., bond, van der Waals, angular, etc.).
+  - `JNB4-ReaxFF_optimization.ipynb`: This notebook takes the database and the ReaxFF Python object to perform a multi-objective optimization and find the new ReaxFF potential that minimizes the Sum of Squared Errors (SSE).
+- `tools`: This directory contains a collection of Python modules and scripts.
+
+> **Note**
+>
+> Please note that the Jupyter notebooks `preJNB4-ReaxFF_optimization.ipynb` and `JNB4-ReaxFF_optimization.ipynb` can be run multiple times to gradually optimize the ReaxFF potential. 
+> This optimization process involves selecting different subsets of parameters, as demonstrated in the workflow and described in the accompanying [article][article-doi].
 
 ## Contributing
 
-If you would like to contribute to the Enhancing ReaxFF DFT Database by performing new simulations and expanding the database, please follow the guidelines outlined in the [Contribution Guidelines](CONTRIBUTING.md). You are welcome to submit pull requests or open issues in the repository. Your contributions are greatly appreciated!
+At the moment the contribution to this codes is close since all the work is under peer-review revision.
 
 ## How to Cite
 
-If you use the database or the tools provided in this repository for your work, please cite it using the following BibTeX entry:
+If you use the protocol or part of in this repository for your work, please cite it using the following BibTeX entry:
 
 ```bibtex
-@dataset{EnhReaxFFdatabase,
+@software{EnhancingReaxFF,
   author       = {De Angelis, Paolo and
                   Cappabianca, Roberta and
                   Fasano, Matteo and
                   Asianri, Pietro and
                   Chiavazzo, Chiavazzo},
-  title        = {{Enhancing the ReaxFF DFT database}},
+  title        = {{Enhancing the ReaxFF protocol}},
   month        = may,
   year         = 2023,
   publisher    = {Zenodo},
@@ -202,4 +197,4 @@ The authors also acknowledge that the simulation results of this database have b
 
 [article-doi]: https://doi.org/TBD
 
-[enhancing-reaxFF-repository]: https://github.com/paolodeangelis/Enhancing_ReaxFF_DFT_database
+[enhancing-reaxFF-database-repository]: https://github.com/paolodeangelis/Enhancing_ReaxFF_DFT_database
