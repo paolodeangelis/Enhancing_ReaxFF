@@ -1,4 +1,4 @@
-# Enhancing the ReaxFF
+# Enhancing the ReaxFF protocol
 
 [![Data FAIR](https://custom-icon-badges.demolab.com/badge/data-FAIR-blue?logo=database\&logoColor=white)](https://www.nature.com/articles/sdata201618)
 [![Made with Python](https://custom-icon-badges.demolab.com/badge/Python-3.9+-blue?logo=python\&logoColor=white)](https://python.org)
@@ -17,14 +17,23 @@ The purpose of the set of notebooks is to facilitate the reparameterization Reax
 
 The database containing the simulation data from *ab initio* simulations obtained from this protocol is published in [Enhancing ReaxFF repository DFT Database][enhancing-reaxFF-database-repository].
 
+The Jupyter Notebooks provided here are designed to facilitate the configuration building, execution of DFT simulations, and optimization of the ReaxFF potential, as described in the workflow diagram shown below. To manage the complexity of the overall operation, we have divided the process into four main Jupyter Notebooks, with an additional notebook that serves as a common module.
+
+<figure>
+    <img src="assets/img/wf.png" alt="workflow">
+    <figcaption><strong>Figure 1</strong>: Protocol workflow.<figcaption>
+<figure> 
+
+
+Each notebook can be executed independently, allowing for flexibility in adapting the workflow to optimize the ReaxFF potential for different compounds with minimal modifications.
+
+The four main Jupyter Notebooks cover various aspects of the workflow, including configuration setup, DFT simulations, and ReaxFF optimization. By following the sequence of these notebooks, you will be able to efficiently perform the entire process, from initial configuration generation to the optimization of the ReaxFF potential.
+
+
 ## Table of Contents
 
 * [Installation](#installation)
 * [Folder Structure](#folder-structure)
-* [Interacting with the Database](#interacting-with-the-database)
-  * [ASE db Command-line](#ase-db-command-line)
-  * [Web Interface](#web-interface)
-  * [ASE Python Interface](#ase-python-interface)
 * [Contributing](#contributing)
 * [How to Cite](#how-to-cite)
 * [License](#license)
@@ -127,69 +136,6 @@ The repository has the following folder structure:
   * `db`: This Python module provides functionalities for handling, reading, and storing data into the database.
   * `plasm_experimental`: This Python module includes the necessary components for using the `AMSCalculator` with PLASM and the SCM software package, utilizing the ASE API. It facilitates running simulations, performing calculations.
   * `scripts`: This directory contains additional scripts for dvanced usage scenarios of this repository.
-
-## Interacting with the Database
-
-There are three ways to interact with the database: using the ASE db command line, the web interface, and the ASE Python interface.
-
-### ASE db Command-line
-
-To interact with the database using the ASE db terminal command, follow these steps:
-
-1. Open a terminal and navigate to the directory containing the `LiF.db` file.
-
-2. Run the following command to start the ASE db terminal:
-
-   ```shell
-   ase db LiF.db
-   ```
-
-3. You can now use the available commands in the terminal to query and manipulate the database. More information can be found in the [ASE database documentation](https://wiki.fysik.dtu.dk/ase/ase/db/db.html).
-
-### Web Interface
-
-To interact with the database using the web interface, follow these steps:
-
-1. Open a terminal and navigate to the directory containing the `LiF.db` file.
-
-2. Run the following command to start the ASE db terminal:
-
-   ```shell
-   ase db -w LiF.db
-   ```
-
-3. Open your web browser and connect to the local server at <http://127.0.0.1:5000>.
-
-![Example of Web Interface](assets/img/ase_db_web.gif)
-
-> **Warning**
->
-> To visualize the 3D structure of the system, you need to install the [JMOL extension](https://jmol.sourceforge.net/). You can use the script `tools/scripts/install_jmol.py` to automatically download and install it:
->
-> ```shell
-> cd tools/scripts/
-> python install_jmol.py
-> ```
-
-### ASE Python Interface
-
-To interact with the database using the ASE Python interface, you can use the following example code:
-
-```python
-from ase.db import connect
-
-# Connect to the database
-db = connect("database.db")
-
-# Query the database
-results = db.select('formula = "LiF"')
-
-# Iterate over the results
-for row in results:
-    print(f"ID: {row.id}, Energy: {row.energy}")
-```
-
-For a more detailed example, refer to the notebook `notebooks/browsing_db.ipynb`. To learn how to perform a simulation, check the notebook `notebooks/running_simulation.ipynb`.
 
 ## Contributing
 
