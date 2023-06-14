@@ -31,6 +31,7 @@
     ],
     "upload_type": "software",
     "access_right": "restricted",
+    "access_conditions": "Currently, the database is restricted and can only be accessed by the authors and reviewers of the associated journal article.",
     "license": "cc-by-4.0",
     "communities": [
         {
