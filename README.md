@@ -2,13 +2,13 @@
 
 [![Data FAIR](https://custom-icon-badges.demolab.com/badge/data-FAIR-blue?logo=database\&logoColor=white)](https://www.nature.com/articles/sdata201618)
 [![Made with Python](https://custom-icon-badges.demolab.com/badge/Python-3.8+-blue?logo=python\&logoColor=white)](https://python.org)
-[![OS - Linux](https://custom-icon-badges.demolab.com/badge/OS-Linux-orange?logo=linux\&logoColor=white)](https://www.linux.org/)
-[![Contributions - close](https://custom-icon-badges.demolab.com/badge/contributions-close-red?logo=code-of-conduct\&logoColor=white)](CONTRIBUTING.md)
-[![Code style - black](https://custom-icon-badges.demolab.com/badge/code%20style-black-000000?logo=code\&logoColor=white)](https://github.com/psf/black)
+[![OS * Linux](https://custom-icon-badges.demolab.com/badge/OS-Linux-orange?logo=linux\&logoColor=white)](https://www.linux.org/)
+[![Contributions * close](https://custom-icon-badges.demolab.com/badge/contributions-close-red?logo=code-of-conduct\&logoColor=white)](CONTRIBUTING.md)
+[![Code style * black](https://custom-icon-badges.demolab.com/badge/code%20style-black-000000?logo=code\&logoColor=white)](https://github.com/psf/black)
 
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/paolodeangelis/Enhancing_ReaxFF_DFT_database/main.svg)](https://results.pre-commit.ci/badge/github/paolodeangelis/Enhancing_ReaxFF_DFT_database/main.svg)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/ba532ddf0c974cccab358938902104d9)](TODO)
-[![License - CC BY 4.0](https://custom-icon-badges.demolab.com/badge/license-CC--BY%204.0-lightgray?logo=law\&logoColor=white)](LICENSE)
+[![License * CC BY 4.0](https://custom-icon-badges.demolab.com/badge/license-CC--BY%204.0-lightgray?logo=law\&logoColor=white)](LICENSE)
 [![DOI](https://sandbox.zenodo.org/badge/DOI/10.5281/zenodo.7959121.svg)](TODO)
 
 
@@ -17,7 +17,7 @@ The purpose of the set of notebooks is to facilitate the reparameterization Reax
 
 The database containing the simulation data from *ab initio* simulations obtained from this protocol is published in [Enhancing ReaxFF repository DFT Database][enhancing-reaxFF-database-repository].
 
-The Jupyter Notebooks provided here are designed to facilitate the configuration building, execution of DFT simulations, and optimization of the ReaxFF potential, as described in the workflow diagram shown below. To manage the complexity of the overall operation, we have divided the process into four main Jupyter Notebooks, with an additional notebook that serves as a common module.
+The Jupyter Notebooks provided here are designed to facilitate the configuration building, execution of DFT simulations, and optimization of the ReaxFF potential, as described in the workflow diagram shown below. To manage the complexity of the overall operation, we have divided the process into four main Jupyter Notebooks, , with an additional auxiliary notebook.
 
 
 ![workflow](assets/img/wf.png)
@@ -112,20 +112,20 @@ The repository has the following folder structure:
 └── JNB4-ReaxFF_optimization.ipynb
 ```
 
-- `CREDITS.md`: This file acknowledges and credits the individuals or organizations that have contributed to the repository.
-- `LICENSE`: This file contains the license information for the repository (CC BY 4.0). It specifies the terms and conditions under which the repository's contents are distributed and used.
-- `README.md`: This file (repository overview and instructions).
-- `requirements.txt`: This file lists the required Python packages and their versions (see [installation section](#installation)).
-- `assets`: This folder contains any additional assets, such as images or documentation, related to the repository.
-- `data`: This folder contains the data files resulted from this work.
-  - `ffield.reax.optimized.ff`: This file is the optimized ReaxFF resulted from using these Jupyter notebooks, as explained in the related [journal article][article-doi].
-- `notebooks`: This folder contains Jupyter notebooks that provide demonstrations and examples of how to use and analyze the database.
-  - `JNB1-Initial_configurations.ipynb`: Jupyter Notebook where the protocol is initialized by querying the *Materials Project* database, downloading the unit crystals, and producing all the initial configurations for the DFT simulations using the *pymatgen* library.
-  - `JNB2-Simulations.ipynb`: This notebook performs the simulations using BAND and DFTB codes available in the Amsterdam Modeling Suite. The simulations are performed in parallel using the *PLAMS* library and *SLURM* scheduler.
-  - `JNB3-Build_trainingset.ipynb`: Here, the quantities needed for the database are extracted and tuned to favor accuracy on the energy.
-  - `preJNB4-ReaxFF_optimization.ipynb`: This is an auxiliary Notebook where the old ReaxFF is converted into a Python object, and it is possible to select the subset of coefficients related to specific interactions to change during the optimization (e.g., bond, van der Waals, angular, etc.).
-  - `JNB4-ReaxFF_optimization.ipynb`: This notebook takes the database and the ReaxFF Python object to perform a multi-objective optimization and find the new ReaxFF potential that minimizes the Sum of Squared Errors (SSE).
-- `tools`: This directory contains a collection of Python modules and scripts.
+* `CREDITS.md`: This file acknowledges and credits the individuals or organizations that have contributed to the repository.
+* `LICENSE`: This file contains the license information for the repository (CC BY 4.0). It specifies the terms and conditions under which the repository's contents are distributed and used.
+* `README.md`: This file (repository overview and instructions).
+* `requirements.txt`: This file lists the required Python packages and their versions (see [installation section](#installation)).
+* `assets`: This folder contains any additional assets, such as images or documentation, related to the repository.
+* `data`: This folder contains the data files resulted from this work.
+  * `ffield.reax.optimized.ff`: This file is the optimized ReaxFF resulted from using these Jupyter notebooks, as explained in the related [journal article][article-doi].
+* `notebooks`: This folder contains Jupyter notebooks that provide demonstrations and examples of how to use and analyze the database.
+  * `JNB1-Initial_configurations.ipynb`: Jupyter Notebook where the protocol is initialized by querying the *Materials Project* database, downloading the unit crystals, and producing all the initial configurations for the DFT simulations using the *pymatgen* library.
+  * `JNB2-Simulations.ipynb`: This notebook performs the simulations using BAND and DFTB codes available in the Amsterdam Modeling Suite. The simulations are performed in parallel using the *PLAMS* library and *SLURM* scheduler.
+  * `JNB3-Build_trainingset.ipynb`: Here, the quantities needed for the database are extracted and tuned to favor accuracy on the energy.
+  * `preJNB4-ReaxFF_optimization.ipynb`: This is an auxiliary Notebook where the old ReaxFF is converted into a Python object, and it is possible to select the subset of coefficients related to specific interactions to change during the optimization (e.g., bond, van der Waals, angular, etc.).
+  * `JNB4-ReaxFF_optimization.ipynb`: This notebook takes the database and the ReaxFF Python object to perform a multi-objective optimization and find the new ReaxFF potential that minimizes the Sum of Squared Errors (SSE).
+* `tools`: This directory contains a collection of Python modules and scripts.
 
 > **Note**
 >
