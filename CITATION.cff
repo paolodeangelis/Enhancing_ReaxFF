@@ -17,6 +17,6 @@ authors:
     given-names: Pietro
     orcid: https://orcid.org/0000-0001-6165-7434
 title: "Enhancing ReaxFF protocol"
-version: 0.1.0
+version: 1.0.0-alpha
 doi: 10.5281/zenodo.7959121
 date-released: 2023-05-22
