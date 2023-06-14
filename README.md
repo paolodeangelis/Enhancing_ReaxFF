@@ -6,10 +6,10 @@
 [![Contributions * close](https://custom-icon-badges.demolab.com/badge/contributions-close-red?logo=code-of-conduct\&logoColor=white)](CONTRIBUTING.md)
 [![Code style * black](https://custom-icon-badges.demolab.com/badge/code%20style-black-000000?logo=code\&logoColor=white)](https://github.com/psf/black)
 
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/paolodeangelis/Enhancing_ReaxFF_DFT_database/main.svg)](https://results.pre-commit.ci/badge/github/paolodeangelis/Enhancing_ReaxFF_DFT_database/main.svg)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/paolodeangelis/Enhancing_ReaxFF/main.svg)](https://results.pre-commit.ci/badge/github/paolodeangelis/Enhancing_ReaxFF/main.svg)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/ba532ddf0c974cccab358938902104d9)](TODO)
 [![License * CC BY 4.0](https://custom-icon-badges.demolab.com/badge/license-CC--BY%204.0-lightgray?logo=law\&logoColor=white)](LICENSE)
-[![DOI](https://sandbox.zenodo.org/badge/DOI/10.5281/zenodo.7959121.svg)](TODO)
+[![DOI](https://sandbox.zenodo.org/badge/DOI/10.5281/zenodo.8036775.svg)](https://doi.org/10.5281/zenodo.8036775)
 
 
 This repository contains the jupyter notebooks used to re-parametrize the ReaxFF force field for LiF, an inorganic compound.
@@ -81,7 +81,7 @@ source venv/AMSYYYY.X.venv/bin/activate # Replace YYYY.X with the correct AMS ve
 
 **Get *Material Project* API key**
 
-Access to [Material Project](https://materialsproject.org/) and follow the istruction on the [documentation](https://materialsproject.org/api)
+Access to [Material Project](https://materialsproject.org/) and follow the instruction on the [documentation](https://materialsproject.org/api)
 
 #### Make the configuration file
 
@@ -117,8 +117,8 @@ The repository has the following folder structure:
 * `README.md`: This file (repository overview and instructions).
 * `requirements.txt`: This file lists the required Python packages and their versions (see [installation section](#installation)).
 * `assets`: This folder contains any additional assets, such as images or documentation, related to the repository.
-* `data`: This folder contains the data files resulted from this work.
-  * `ffield.reax.optimized.ff`: This file is the optimized ReaxFF resulted from using these Jupyter notebooks, as explained in the related [journal article][article-doi].
+* `data`: This folder contains the data files resulting from this work.
+  * `ffield.reax.optimized.ff`: This file is the optimized ReaxFF resulting from using these Jupyter notebooks, as explained in the related [journal article][article-doi].
 * `notebooks`: This folder contains Jupyter notebooks that provide demonstrations and examples of how to use and analyze the database.
   * `JNB1-Initial_configurations.ipynb`: Jupyter Notebook where the protocol is initialized by querying the *Materials Project* database, downloading the unit crystals, and producing all the initial configurations for the DFT simulations using the *pymatgen* library.
   * `JNB2-Simulations.ipynb`: This notebook performs the simulations using BAND and DFTB codes available in the Amsterdam Modeling Suite. The simulations are performed in parallel using the *PLAMS* library and *SLURM* scheduler.
@@ -134,11 +134,11 @@ The repository has the following folder structure:
 
 ## Contributing
 
-At the moment the contribution to this codes is close since all the work is under peer-review revision.
+At the moment the contribution to this repository is closed since all the work is under peer-review revision.
 
 ## How to Cite
 
-If you use the protocol or part of in this repository for your work, please cite it using the following BibTeX entry:
+If you use the protocol or part of this repository for your work, please cite it using the following BibTeX entry:
 
 ```bibtex
 @software{EnhancingReaxFF,
@@ -147,13 +147,13 @@ If you use the protocol or part of in this repository for your work, please cite
                   Fasano, Matteo and
                   Asianri, Pietro and
                   Chiavazzo, Chiavazzo},
-  title        = {{Enhancing the ReaxFF protocol}},
-  month        = may,
+  title        = {Enhancing the ReaxFF protocol},
+  month        = jun,
   year         = 2023,
   publisher    = {Zenodo},
-  version      = {1.0.0-beta},
-  doi          = {10.5072/zenodo.1204707},
-  url          = {https://doi.org/10.5281/zenodo.7959121}
+  version      = {1.0.0-alpha},
+  doi          = {10.5281/zenodo.8036775},
+  url          = {https://doi.org/10.5281/zenodo.8036775}
 }
 ```
 
