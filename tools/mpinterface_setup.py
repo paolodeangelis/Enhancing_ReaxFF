@@ -13,9 +13,11 @@ MPINT_CONFIG_YAML = None
 def get_package_path():  # noqa: D103
     try:
         import tools
+
         PACKAGE_PATH = os.path.dirname(tools.__file__)
     except ImportError:
         import mp
+
         PACKAGE_PATH = os.getcwd()
     global MPINT_CONFIG_YAML
     MPINT_CONFIG_YAML = os.path.join(PACKAGE_PATH, "mp", "mpint_config.yaml")

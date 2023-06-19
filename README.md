@@ -38,7 +38,7 @@ The four main Jupyter Notebooks cover various aspects of the workflow, including
 
 ## Installation
 
-To use the database and interact with it, ensure that you have the following Python requirements installed:
+To use the protocol and interact with it, ensure that you have the following Python requirements installed:
 
 **Minimum Requirements:**
 
@@ -129,7 +129,7 @@ The repository has the following folder structure:
 
 > **Note**
 >
-> Please note that the Jupyter notebooks `preJNB4-ReaxFF_optimization.ipynb` and `JNB4-ReaxFF_optimization.ipynb` can be run multiple times to gradually optimize the ReaxFF potential. 
+> Please note that the Jupyter notebooks `preJNB4-ReaxFF_optimization.ipynb` and `JNB4-ReaxFF_optimization.ipynb` can be run multiple times to gradually optimize the ReaxFF potential.
 > This optimization process involves selecting different subsets of parameters, as demonstrated in the workflow and described in the accompanying [article][article-doi].
 
 ## Contributing
@@ -198,4 +198,3 @@ The authors also acknowledge that the simulation results of this database have b
 [article-doi]: https://doi.org/TBD
 
 [enhancing-reaxFF-database-repository]: https://github.com/paolodeangelis/Enhancing_ReaxFF_DFT_database
-

@@ -1,4 +1,3 @@
-
 def get_all_sites(sites, lattice, supercell=[1, 1, 1]):
     Na, Nb, Nc = supercell
     A, B, C = lattice.matrix
