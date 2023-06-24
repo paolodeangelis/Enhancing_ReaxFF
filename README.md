@@ -141,20 +141,17 @@ At the moment the contribution to this repository is closed since all the work i
 If you use the protocol or part of this repository for your work, please cite it using the following BibTeX entries:
 
 ```bibtex
-@misc{de_angelis_enhancing_2023,
-	author      = {De Angelis, Paolo and
-                Cappabianca, Roberta and
-                Fasano, Matteo and
-                Asinari, Pietro and
-                Chiavazzo, Eliodoro},
-	title       = {Enhancing {ReaxFF} for {Molecular} {Dynamics} {Simulations} of {Lithium}-{Ion} {Batteries}: {An} interactive reparameterization protocol},
-	shorttitle = {Enhancing {ReaxFF} for {Molecular} {Dynamics} {Simulations} of {Lithium}-{Ion} {Batteries}},
-	url         = {http://arxiv.org/abs/2306.13027},
-	doi         = {10.48550/arXiv.2306.13027},
-	publisher = {arXiv},
-	month     = jun,
-	year      = {2023},
-	note      = {arXiv:2306.13027 [cond-mat]},
+@article{deangelis2023enhancing,
+	title        = {Enhancing ReaxFF for Molecular Dynamics Simulations of Lithium-Ion Batteries: An interactive reparameterization protocol},
+	author       = {Paolo De Angelis and 
+                  Roberta Cappabianca and 
+                  Matteo Fasano and 
+                  Pietro Asinari and 
+                  Eliodoro Chiavazzo},
+	year         = 2023,
+	eprint       = {2306.13027},
+	archiveprefix = {arXiv},
+	primaryclass = {cond-mat.mtrl-sci}
 }
 ```
 
