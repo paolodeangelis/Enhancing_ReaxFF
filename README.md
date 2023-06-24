@@ -138,14 +138,32 @@ At the moment the contribution to this repository is closed since all the work i
 
 ## How to Cite
 
-If you use the protocol or part of this repository for your work, please cite it using the following BibTeX entry:
+If you use the protocol or part of this repository for your work, please cite it using the following BibTeX entries:
+
+```bibtex
+@misc{de_angelis_enhancing_2023,
+	author      = {De Angelis, Paolo and
+                Cappabianca, Roberta and
+                Fasano, Matteo and
+                Asinari, Pietro and
+                Chiavazzo, Eliodoro},
+	title       = {Enhancing {ReaxFF} for {Molecular} {Dynamics} {Simulations} of {Lithium}-{Ion} {Batteries}: {An} interactive reparameterization protocol},
+	shorttitle = {Enhancing {ReaxFF} for {Molecular} {Dynamics} {Simulations} of {Lithium}-{Ion} {Batteries}},
+	url         = {http://arxiv.org/abs/2306.13027},
+	doi         = {10.48550/arXiv.2306.13027},
+	publisher = {arXiv},
+	month     = jun,
+	year      = {2023},
+	note      = {arXiv:2306.13027 [cond-mat]},
+}
+```
 
 ```bibtex
 @software{EnhancingReaxFF,
   author       = {De Angelis, Paolo and
                   Cappabianca, Roberta and
                   Fasano, Matteo and
-                  Asianri, Pietro and
+                  Asinari, Pietro and
                   Chiavazzo, Chiavazzo},
   title        = {Enhancing the ReaxFF protocol},
   month        = jun,
@@ -195,6 +213,6 @@ The authors also acknowledge that the simulation results of this database have b
 
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
-[article-doi]: https://doi.org/TBD
+[article-doi]: https://doi.org/10.48550/arXiv.2306.13027
 
 [enhancing-reaxFF-database-repository]: https://github.com/paolodeangelis/Enhancing_ReaxFF_DFT_database
