@@ -143,10 +143,10 @@ If you use the protocol or part of this repository for your work, please cite it
 ```bibtex
 @article{deangelis2023enhancing,
 	title        = {Enhancing ReaxFF for Molecular Dynamics Simulations of Lithium-Ion Batteries: An interactive reparameterization protocol},
-	author       = {Paolo De Angelis and 
-                  Roberta Cappabianca and 
-                  Matteo Fasano and 
-                  Pietro Asinari and 
+	author       = {Paolo De Angelis and
+                  Roberta Cappabianca and
+                  Matteo Fasano and
+                  Pietro Asinari and
                   Eliodoro Chiavazzo},
 	year         = 2023,
 	eprint       = {2306.13027},
