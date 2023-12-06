@@ -73,37 +73,37 @@ ReferenceValue: |
    array([ 5.81337908e-23, -2.01719284e-22, -3.37564517e-23])
 Unit: au/Ang, 1.0
 ---
-Expression: energy('SP-1.0-0-LiF_Fm-3m_-3.18_2x1x1')/2 - energy('GO-0-LiF_Fm-3m_-3.18') 
+Expression: energy('SP-1.0-0-LiF_Fm-3m_-3.18_2x1x1')/2 - energy('GO-0-LiF_Fm-3m_-3.18')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 5.949881801470269e-06
 Unit: au, 1.0
 ---
-Expression: energy('SP-1.1-0-LiF_Fm-3m_-3.18_2x2x1')/4 - energy('GO-0-LiF_Fm-3m_-3.18') 
+Expression: energy('SP-1.1-0-LiF_Fm-3m_-3.18_2x2x1')/4 - energy('GO-0-LiF_Fm-3m_-3.18')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 6.129802541110507e-06
 Unit: au, 1.0
 ---
-Expression: energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')/8 - energy('GO-0-LiF_Fm-3m_-3.18') 
+Expression: energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')/8 - energy('GO-0-LiF_Fm-3m_-3.18')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 5.186377689980759e-06
 Unit: au, 1.0
 ---
-Expression: energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')/12 - energy('GO-0-LiF_Fm-3m_-3.18') 
+Expression: energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')/12 - energy('GO-0-LiF_Fm-3m_-3.18')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 5.658184820767076e-05
 Unit: au, 1.0
 ---
-Expression: energy('SP-1.4-0-LiF_Fm-3m_-3.18_3x3x2')/18 - energy('GO-0-LiF_Fm-3m_-3.18') 
+Expression: energy('SP-1.4-0-LiF_Fm-3m_-3.18_3x3x2')/18 - energy('GO-0-LiF_Fm-3m_-3.18')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 4.474561041312164e-05
 Unit: au, 1.0
 ---
-Expression: energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3')/27 - energy('GO-0-LiF_Fm-3m_-3.18') 
+Expression: energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3')/27 - energy('GO-0-LiF_Fm-3m_-3.18')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: -5.652411370860033e-05
@@ -1099,235 +1099,235 @@ Sigma: 5.0
 ReferenceValue: 289.47119223987374
 Unit: degree, 1.0
 ---
-Expression: energy('SP-2.0-0-LiF_Fm-3m_-3.18_xx_-0.125') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.0-0-LiF_Fm-3m_-3.18_xx_-0.125') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.038360128814019845
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.1-0-LiF_Fm-3m_-3.18_xx_-0.095') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.1-0-LiF_Fm-3m_-3.18_xx_-0.095') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.018790149024511038
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.10-0-LiF_Fm-3m_-3.18_xx_0.175') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.10-0-LiF_Fm-3m_-3.18_xx_0.175') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.05112455364451307
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.11-0-LiF_Fm-3m_-3.18_xx_0.205') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.11-0-LiF_Fm-3m_-3.18_xx_0.205') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.06428880443637297
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.12-0-LiF_Fm-3m_-3.18_xx_0.235') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.12-0-LiF_Fm-3m_-3.18_xx_0.235') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.07820414795244801
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.13-0-LiF_Fm-3m_-3.18_xy_-0.125') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.13-0-LiF_Fm-3m_-3.18_xy_-0.125') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.021837649613644317
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.14-0-LiF_Fm-3m_-3.18_xy_-0.095') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.14-0-LiF_Fm-3m_-3.18_xy_-0.095') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.011348959463006736
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.15-0-LiF_Fm-3m_-3.18_xy_-0.065') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.15-0-LiF_Fm-3m_-3.18_xy_-0.065') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.004337149613490965
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.16-0-LiF_Fm-3m_-3.18_xy_-0.035') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.16-0-LiF_Fm-3m_-3.18_xy_-0.035') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.0003207826885045506
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.17-0-LiF_Fm-3m_-3.18_xy_-0.005') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.17-0-LiF_Fm-3m_-3.18_xy_-0.005') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: -1.4724993249615181e-05
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.18-0-LiF_Fm-3m_-3.18_xy_0.025') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.18-0-LiF_Fm-3m_-3.18_xy_0.025') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.0010029176326895595
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.19-0-LiF_Fm-3m_-3.18_xy_0.055') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.19-0-LiF_Fm-3m_-3.18_xy_0.055') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.0028526000134689866
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.2-0-LiF_Fm-3m_-3.18_xx_-0.065') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.2-0-LiF_Fm-3m_-3.18_xx_-0.065') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.006670029554584289
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.20-0-LiF_Fm-3m_-3.18_xy_0.085') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.20-0-LiF_Fm-3m_-3.18_xy_0.085') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.00842196855506927
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.21-0-LiF_Fm-3m_-3.18_xy_0.115') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.21-0-LiF_Fm-3m_-3.18_xy_0.115') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.016687355198357068
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.22-0-LiF_Fm-3m_-3.18_xy_0.145') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.22-0-LiF_Fm-3m_-3.18_xy_0.145') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.02847098004932036
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.23-0-LiF_Fm-3m_-3.18_xy_0.175') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.23-0-LiF_Fm-3m_-3.18_xy_0.175') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.044752934040516834
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.24-0-LiF_Fm-3m_-3.18_xy_0.205') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.24-0-LiF_Fm-3m_-3.18_xy_0.205') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.06657402592735195
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.25-0-LiF_Fm-3m_-3.18_xy_0.235') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.25-0-LiF_Fm-3m_-3.18_xy_0.235') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.0955379625829238
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.26-0-LiF_Fm-3m_-3.18_xxyyzz_-0.125') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.26-0-LiF_Fm-3m_-3.18_xxyyzz_-0.125') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.2258507048946825
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.27-0-LiF_Fm-3m_-3.18_xxyyzz_-0.095') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.27-0-LiF_Fm-3m_-3.18_xxyyzz_-0.095') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.10502130967377354
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.28-0-LiF_Fm-3m_-3.18_xxyyzz_-0.065') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.28-0-LiF_Fm-3m_-3.18_xxyyzz_-0.065') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.03760867821118552
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.29-0-LiF_Fm-3m_-3.18_xxyyzz_-0.035') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.29-0-LiF_Fm-3m_-3.18_xxyyzz_-0.035') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.006307676190061784
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.3-0-LiF_Fm-3m_-3.18_xx_-0.035') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.3-0-LiF_Fm-3m_-3.18_xx_-0.035') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.0008690123844132813
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.30-0-LiF_Fm-3m_-3.18_xxyyzz_-0.005') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.30-0-LiF_Fm-3m_-3.18_xxyyzz_-0.005') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: -0.0006015516409263455
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.31-0-LiF_Fm-3m_-3.18_xxyyzz_0.025') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.31-0-LiF_Fm-3m_-3.18_xxyyzz_0.025') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.009159665207107537
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.32-0-LiF_Fm-3m_-3.18_xxyyzz_0.055') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.32-0-LiF_Fm-3m_-3.18_xxyyzz_0.055') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.030481594558821712
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.33-0-LiF_Fm-3m_-3.18_xxyyzz_0.085') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.33-0-LiF_Fm-3m_-3.18_xxyyzz_0.085') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.05949774370782279
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.34-0-LiF_Fm-3m_-3.18_xxyyzz_0.115') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.34-0-LiF_Fm-3m_-3.18_xxyyzz_0.115') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.09397901113759133
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.35-0-LiF_Fm-3m_-3.18_xxyyzz_0.145') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.35-0-LiF_Fm-3m_-3.18_xxyyzz_0.145') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.12578087026923868
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.36-0-LiF_Fm-3m_-3.18_xxyyzz_0.175') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.36-0-LiF_Fm-3m_-3.18_xxyyzz_0.175') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.16632709923298705
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.37-0-LiF_Fm-3m_-3.18_xxyyzz_0.205') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.37-0-LiF_Fm-3m_-3.18_xxyyzz_0.205') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.20771406036821816
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.38-0-LiF_Fm-3m_-3.18_xxyyzz_0.235') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.38-0-LiF_Fm-3m_-3.18_xxyyzz_0.235') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.25001741096124874
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.4-0-LiF_Fm-3m_-3.18_xx_-0.005') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.4-0-LiF_Fm-3m_-3.18_xx_-0.005') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: -0.00020171096242904696
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.5-0-LiF_Fm-3m_-3.18_xx_0.025') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.5-0-LiF_Fm-3m_-3.18_xx_0.025') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.0024102733152631117
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.6-0-LiF_Fm-3m_-3.18_xx_0.055') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.6-0-LiF_Fm-3m_-3.18_xx_0.055') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.007900727753508363
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.7-0-LiF_Fm-3m_-3.18_xx_0.085') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.7-0-LiF_Fm-3m_-3.18_xx_0.085') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.015068632835195217
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.8-0-LiF_Fm-3m_-3.18_xx_0.115') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.8-0-LiF_Fm-3m_-3.18_xx_0.115') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.02497162958707122
 Unit: au, 1.0
 ---
-Expression: energy('SP-2.9-0-LiF_Fm-3m_-3.18_xx_0.145') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2') 
+Expression: energy('SP-2.9-0-LiF_Fm-3m_-3.18_xx_0.145') - energy('SP-1.2-0-LiF_Fm-3m_-3.18_2x2x2')
 Weight: 10000.0
 Sigma: 0.001
 ReferenceValue: 0.036437687827287846
@@ -4952,49 +4952,49 @@ Sigma: 0.1
 ReferenceValue: -0.16677045076178842
 Unit: au, 1.0
 ---
-Expression: energy('GO-6.0-0-LiF_Fm-3m_-3.18_001x2')/16 - energy('GO-0-LiF_Fm-3m_-3.18')/2 
+Expression: energy('GO-6.0-0-LiF_Fm-3m_-3.18_001x2')/16 - energy('GO-0-LiF_Fm-3m_-3.18')/2
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 0.021431130817102684
 Unit: au, 1.0
 ---
-Expression: energy('GO-6.1-0-LiF_Fm-3m_-3.18_001x3')/24 - energy('GO-0-LiF_Fm-3m_-3.18')/2 
+Expression: energy('GO-6.1-0-LiF_Fm-3m_-3.18_001x3')/24 - energy('GO-0-LiF_Fm-3m_-3.18')/2
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 0.02306813979323477
 Unit: au, 1.0
 ---
-Expression: energy('GO-6.10-0-LiF_Fm-3m_-3.18_012x3')/32 - energy('GO-0-LiF_Fm-3m_-3.18')/2 
+Expression: energy('GO-6.10-0-LiF_Fm-3m_-3.18_012x3')/32 - energy('GO-0-LiF_Fm-3m_-3.18')/2
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 0.010190919531206433
 Unit: au, 1.0
 ---
-Expression: energy('GO-6.2-0-LiF_Fm-3m_-3.18_001x4')/32 - energy('GO-0-LiF_Fm-3m_-3.18')/2 
+Expression: energy('GO-6.2-0-LiF_Fm-3m_-3.18_001x4')/32 - energy('GO-0-LiF_Fm-3m_-3.18')/2
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 0.015164224937164406
 Unit: au, 1.0
 ---
-Expression: energy('GO-6.3-0-LiF_Fm-3m_-3.18_011x2')/16 - energy('GO-0-LiF_Fm-3m_-3.18')/2 
+Expression: energy('GO-6.3-0-LiF_Fm-3m_-3.18_011x2')/16 - energy('GO-0-LiF_Fm-3m_-3.18')/2
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 0.00305645717205838
 Unit: au, 1.0
 ---
-Expression: energy('GO-6.4-0-LiF_Fm-3m_-3.18_011x3')/24 - energy('GO-0-LiF_Fm-3m_-3.18')/2 
+Expression: energy('GO-6.4-0-LiF_Fm-3m_-3.18_011x3')/24 - energy('GO-0-LiF_Fm-3m_-3.18')/2
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 0.0017738306256716851
 Unit: au, 1.0
 ---
-Expression: energy('GO-6.5-0-LiF_Fm-3m_-3.18_011x4')/32 - energy('GO-0-LiF_Fm-3m_-3.18')/2 
+Expression: energy('GO-6.5-0-LiF_Fm-3m_-3.18_011x4')/32 - energy('GO-0-LiF_Fm-3m_-3.18')/2
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 0.001126544128745799
 Unit: au, 1.0
 ---
-Expression: energy('GO-6.6-0-LiF_Fm-3m_-3.18_111x2')/16 - energy('GO-0-LiF_Fm-3m_-3.18')/2 
+Expression: energy('GO-6.6-0-LiF_Fm-3m_-3.18_111x2')/16 - energy('GO-0-LiF_Fm-3m_-3.18')/2
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 0.025714670658903316
@@ -5840,61 +5840,61 @@ Sigma: 3.14
 ReferenceValue: 119.99999999995308
 Unit: au, 1.0
 ---
-Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_320.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3') 
+Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_320.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 1.6917501841559783
 Unit: au, 1.0
 ---
-Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_340.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3') 
+Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_340.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 1.6164713601233984
 Unit: au, 1.0
 ---
-Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_360.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3') 
+Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_360.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 1.524370715012651
 Unit: au, 1.0
 ---
-Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_380.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3') 
+Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_380.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 1.5382672519380094
 Unit: au, 1.0
 ---
-Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_400.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3') 
+Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_400.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 1.7508393156624606
 Unit: au, 1.0
 ---
-Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_420.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3') 
+Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_420.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 1.5832276710094675
 Unit: au, 1.0
 ---
-Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_440.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3') 
+Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_440.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 1.6267408310068845
 Unit: au, 1.0
 ---
-Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_460.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3') 
+Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_460.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 1.4800119825018214
 Unit: au, 1.0
 ---
-Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_480.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3') 
+Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_480.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 1.5419050225715978
 Unit: au, 1.0
 ---
-Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_500.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3') 
+Expression: energy('SP-7.0-0-LiF_Fm-3m_-3.18_3x3x3_500.0ps') - energy('SP-1.5-0-LiF_Fm-3m_-3.18_3x3x3')
 Weight: 1.0
 Sigma: 0.002
 ReferenceValue: 1.5067085567542335
@@ -7172,121 +7172,121 @@ ReferenceValue: |
           -0.04400574])
 Unit: au, 1.0
 ---
-Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_100.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_100.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.10901415535369097
 Unit: au, 1.0
 ---
-Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_125.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_125.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.08644570775069838
 Unit: au, 1.0
 ---
-Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_150.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_150.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.054509581973320564
 Unit: au, 1.0
 ---
-Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_175.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_175.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.058486425683582866
 Unit: au, 1.0
 ---
-Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_200.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_200.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.08813305732465437
 Unit: au, 1.0
 ---
-Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_225.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_225.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.09604550925737954
 Unit: au, 1.0
 ---
-Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_25.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_25.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.06440307933698364
 Unit: au, 1.0
 ---
-Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_250.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_250.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.08799144165774919
 Unit: au, 1.0
 ---
-Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_50.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_50.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.08495549694384863
 Unit: au, 1.0
 ---
-Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_75.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-10.0-0-LiF_Fm-3m_-3.18_2x2x3_75.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.11685449827700722
 Unit: au, 1.0
 ---
-Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_100.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_100.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.1536875394412789
 Unit: au, 1.0
 ---
-Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_125.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_125.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.16389835912946182
 Unit: au, 1.0
 ---
-Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_150.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_150.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.1353386703833337
 Unit: au, 1.0
 ---
-Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_175.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_175.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.10138317910170258
 Unit: au, 1.0
 ---
-Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_200.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_200.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.12313354187250525
 Unit: au, 1.0
 ---
-Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_225.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_225.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.12636795805477163
 Unit: au, 1.0
 ---
-Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_25.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_25.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.09587896213119507
 Unit: au, 1.0
 ---
-Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_250.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_250.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.14168173111806937
 Unit: au, 1.0
 ---
-Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_50.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_50.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.163480709208784
 Unit: au, 1.0
 ---
-Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_75.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2') 
+Expression: energy('SP-11.0-0-LiF_Fm-3m_-3.18_2x2x3_75.0ps') - energy('SP-1.3-0-LiF_Fm-3m_-3.18_3x2x2')
 Weight: 10.0
 Sigma: 0.002
 ReferenceValue: 0.17166942133920315
