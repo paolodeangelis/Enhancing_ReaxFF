@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import glob
 import os
-from typing import List, Tuple
 
 import numpy as np
 import pandas as pd
@@ -10,7 +9,7 @@ import yaml
 from ase import Atoms
 from ase.io import read
 from pandas import DataFrame
-from pymatgen.core import Lattice, Molecule, Structure
+from pymatgen.core import Structure
 from pymatgen.ext.matproj import MPRester
 from pymatgen.io.ase import AseAtomsAdaptor
 

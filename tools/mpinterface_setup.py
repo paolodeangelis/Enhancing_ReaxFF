@@ -4,7 +4,6 @@
 import argparse
 import os
 import sys
-import warnings
 
 sys.path.insert(0, os.path.abspath("."))
 MPINT_CONFIG_YAML = None
@@ -16,7 +15,7 @@ def get_package_path():  # noqa: D103
 
         PACKAGE_PATH = os.path.dirname(tools.__file__)
     except ImportError:
-        import mp
+        import mp  # noqa: F401
 
         PACKAGE_PATH = os.getcwd()
     global MPINT_CONFIG_YAML

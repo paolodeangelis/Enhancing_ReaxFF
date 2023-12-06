@@ -1,5 +1,3 @@
-import os
-
 import scm.plams as scm
 
 # Unit cells `Single Point`
