@@ -1,9 +1,11 @@
 import os
-import pandas as pd
-import numpy as np
-from multiprocessing import Pool, Value, Manager
-from multiprocessing.managers import ValueProxy, ListProxy
 from ctypes import c_char_p
+from multiprocessing import Manager, Pool
+from multiprocessing.managers import ListProxy, ValueProxy
+
+import numpy as np
+import pandas as pd
+
 
 def progressbar(percentage: float, info: str = "", screen: int = 100, status: str = "info"):
     if percentage is None:
@@ -49,18 +51,18 @@ def progressbar(percentage: float, info: str = "", screen: int = 100, status: st
 
 def chunkify(file_path, nlines=1024):
     fileEnd = os.path.getsize(file_path)
-    with open(file_path, 'r') as file_obj:
+    with open(file_path) as file_obj:
         chunkEnd = file_obj.tell()
         while True:
             chunkStart = chunkEnd
             n = 0
             while True:
-                line = file_obj.readline()
+                line = file_obj.readline()  # noqa
                 chunkEnd = file_obj.tell()
                 n += 1
                 if n >= nlines:
                     break
-            yield chunkEnd/fileEnd, chunkStart, chunkEnd - chunkStart
+            yield chunkEnd / fileEnd, chunkStart, chunkEnd - chunkStart
             if chunkEnd >= fileEnd:
                 break
 
@@ -76,60 +78,78 @@ def storing_in_dataframe(file_path, interface_names, interface_x, interface_isac
         interface_x = list(interface_x)
     if isinstance(interface_isactive, ListProxy):
         interface_isactive = list(interface_isactive)
-    dataset_df = pd.DataFrame(index=np.arange(nlines), columns=['index', 'fx', 'time'] + interface_names)
+    dataset_df = pd.DataFrame(index=np.arange(nlines), columns=["index", "fx", "time"] + interface_names)
     active_index = np.where(interface_isactive)[0]
-    n=0
-    with open(file_path, 'r') as file_obj: 
+    n = 0
+    with open(file_path) as file_obj:
         file_obj.seek(chunkStart)
         lines = file_obj.read(chunkSize).splitlines()
         for line in lines:
-            if line[0] == '#':
+            if line[0] == "#":
                 continue
             data = line.split()
-            dataset_df.loc[n, 'index'] = int(data[0])
-            dataset_df.loc[n, 'fx'] = float(data[1])
-            dataset_df.loc[n, 'time'] = float(data[2])
-            dataset_df.iloc[n, 3:]  = interface_x
+            dataset_df.loc[n, "index"] = int(data[0])
+            dataset_df.loc[n, "fx"] = float(data[1])
+            dataset_df.loc[n, "time"] = float(data[2])
+            dataset_df.iloc[n, 3:] = interface_x
             dataset_df.iloc[n, active_index + 3] = [float(d) for d in data[3:]]
-            n +=1
-    dataset_df = dataset_df.dropna(axis=0, how='all')
+            n += 1
+    dataset_df = dataset_df.dropna(axis=0, how="all")
     return dataset_df
 
 
 def get_run_history(file_path, interface, workers=4, nlines=1024):
-    dataframes = []
+    dataframes = []  # noqa
     pool = Pool(processes=workers)
     jobs = []
     # shared memory ojects
     manager = Manager()
-    s_nlines = manager.Value('i', nlines)
+    s_nlines = manager.Value("i", nlines)
     s_file_path = manager.Value(c_char_p, file_path)
     s_interface_names = manager.list(interface.names)
     s_interface_x = manager.list(interface.x)
     s_interface_isactive = manager.list(interface.is_active)
     for i, (perc_, chunkStart_, chunkSize_) in enumerate(chunkify(file_path, nlines=nlines)):
-        jobs.append( 
+        jobs.append(
             pool.apply_async(
-                storing_in_dataframe, args=(s_file_path, s_interface_names, s_interface_x, 
-                                            s_interface_isactive, chunkStart_, chunkSize_, s_nlines)
-                ) 
-            ) #file_path, interface_names, interface_x, interface_isactive, chunkStart, chunkSize, nlines
-        print(f'Warmup (jobs: {i+1}, cores used {workers})'.ljust(35) + progressbar(0.0, status='info', screen=65), 
-                end='\r', flush=True)
+                storing_in_dataframe,
+                args=(
+                    s_file_path,
+                    s_interface_names,
+                    s_interface_x,
+                    s_interface_isactive,
+                    chunkStart_,
+                    chunkSize_,
+                    s_nlines,
+                ),
+            )
+        )  # file_path, interface_names, interface_x, interface_isactive, chunkStart, chunkSize, nlines
+        print(
+            f"Warmup (jobs: {i+1}, cores used {workers})".ljust(35) + progressbar(0.0, status="info", screen=65),
+            end="\r",
+            flush=True,
+        )
     N_jobs_rest = N_jobs = len(jobs)
     results = []
     n = 0
-    print(f'Reading (Jobs remaining: {N_jobs_rest})'.ljust(35) + progressbar(n / N_jobs * 100.0, status='info', screen=65), 
-                end='\r', flush=True)
+    print(
+        f"Reading (Jobs remaining: {N_jobs_rest})".ljust(35)
+        + progressbar(n / N_jobs * 100.0, status="info", screen=65),
+        end="\r",
+        flush=True,
+    )
     while N_jobs_rest > 0:
         job = jobs.pop(0)
-        results.append( job.get() )
+        results.append(job.get())
         n += 1
         N_jobs_rest = len(jobs)
-        print(f'Reading (Jobs remaining: {N_jobs_rest})'.ljust(35) + progressbar(n / N_jobs * 100.0, status='info', screen=65), 
-                end='\r', flush=True)
-    print(f'DONE'.ljust(35) + progressbar(n / N_jobs * 100.0, status='info', screen=65), 
-                end='\n', flush=True)
+        print(
+            f"Reading (Jobs remaining: {N_jobs_rest})".ljust(35)
+            + progressbar(n / N_jobs * 100.0, status="info", screen=65),
+            end="\r",
+            flush=True,
+        )
+    print("DONE".ljust(35) + progressbar(n / N_jobs * 100.0, status="info", screen=65), end="\n", flush=True)
     pool.close()
     pool.join()
     return results

@@ -1,7 +1,8 @@
 [flake8]
 per-file-ignores =
     __init__.py:F401,
-    default_settings.py:E501,W505
+    default_settings.py:E501,W505,
+    templates.py:E501
 ignore =
     E402,
     E203,

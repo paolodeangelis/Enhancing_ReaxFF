@@ -1,3 +1,5 @@
+import os
+
 PARAM_SCRIP_TEMPLATE = f"""# PARAM Script
 print(f" START ".center(80, '='))
 import os, sys, pickle
@@ -82,9 +84,9 @@ print(f"{{get_time()}} {{optimizer_info['name']}} optimizer with " + " ".join([f
 PARAM_SCRIP_TEMPLATE += """
 # Parallel Strategy
 parallel_kwargs = {{
-    'parametervectors': {:d}, 
-    'jobs':             {:d}, 
-    'processes':        {:d}, 
+    'parametervectors': {:d},
+    'jobs':             {:d},
+    'processes':        {:d},
     'threads':          {:d}
 }}
 parallel = params.ParallelLevels(**parallel_kwargs)
@@ -100,7 +102,7 @@ optimization_kwargs = {{
     # 'validation'          : .15,     # Percentage of the training set to be used as validation, or another DataSet() instance
     'parallel'            : parallel,
     'callbacks'           : callbacks,
-    'plams_workdir_path'  : tmp_dir, 
+    'plams_workdir_path'  : tmp_dir,
     # 'batch_size'          : 32,     # At every iteration, only compute a maximum of `batch_size` properties
     # 'use_pipe'            : True,     # Use the AMSPipe interface where possible
     # 'n_cores'             : None,     # Use N CPU cores for the execution of jobs during an optimization. Defaults to the number of physical cores
