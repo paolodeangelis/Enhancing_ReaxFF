@@ -81,7 +81,7 @@ source venv/AMSYYYY.X.venv/bin/activate # Replace YYYY.X with the correct AMS ve
 
 **Get *Material Project* API key**
 
-Access to [Material Project](https://materialsproject.org/) and follow the instruction on the [documentation](https://materialsproject.org/api)
+Access to [Material Project](https://materialsproject.org/) and follow the instructions on the [documentation](https://materialsproject.org/api)
 
 #### Make the configuration file
 

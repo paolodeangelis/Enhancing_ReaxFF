@@ -1,5 +1,11 @@
 [flake8]
-per-file-ignores = __init__.py:F401
+per-file-ignores =
+    __init__.py:F401,
+    default_settings.py:E501,W505
+ignore =
+    E402,
+    E203,
+    W503
 max-line-length = 120
 exclude = .tox,.git
 max-doc-length = 120
