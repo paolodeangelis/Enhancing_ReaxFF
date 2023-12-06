@@ -48,7 +48,7 @@ To use the protocol and interact with it, ensure that you have the following Pyt
 
 **Requirements for Re-running or Performing New Simulations:**
 
-* SCM (Software for Chemistry & Materials) Amsterdam Modeling Suite
+* SCM (Software for Chemistry & Materials) Amsterdam Modeling Suite (version < 2022.4)
 * PLAMS (Python Library for Automating Molecular Simulation) library
 
 **Requirements for Re-running ReaxFF optimization:**
@@ -103,6 +103,9 @@ The repository has the following folder structure:
 ├── requirements.txt
 ├── assets
 ├── data
+│   ├── training_set.yaml
+│   ├── test_set.yaml
+│   ├── ffield.reax.CHOSiLiF_K.S.Yun_etal_2017.ff
 │   └── ffield.reax.optimized.ff
 ├── tools
 ├── JNB1-Initial_configrations.ipynb
@@ -118,6 +121,9 @@ The repository has the following folder structure:
 * `requirements.txt`: This file lists the required Python packages and their versions (see [installation section](#installation)).
 * `assets`: This folder contains any additional assets, such as images or documentation, related to the repository.
 * `data`: This folder contains the data files resulting from this work.
+  * `training_set.yaml`: YAML (human and machine-readable) file with the training-set quantities.
+  * `test_set.yaml`: YAML (human and machine-readable) file with the test-set quantities.
+  * `ffield.reax.CHOSiLiF_K.S.Yun_etal_2017.ff`: This file is the starting point ReaxFF corresponding to the article [*Yun et al., J. Phys. Chem. Lett. 2017, 8, 13, 2812–2818*][old-ff-doi].
   * `ffield.reax.optimized.ff`: This file is the optimized ReaxFF resulting from using these Jupyter notebooks, as explained in the related [journal article][article-doi].
 * `notebooks`: This folder contains Jupyter notebooks that provide demonstrations and examples of how to use and analyze the database.
   * `JNB1-Initial_configurations.ipynb`: Jupyter Notebook where the protocol is initialized by querying the *Materials Project* database, downloading the unit crystals, and producing all the initial configurations for the DFT simulations using the *pymatgen* library.
@@ -211,5 +217,7 @@ The authors also acknowledge that the simulation results of this database have b
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
 [article-doi]: https://doi.org/10.48550/arXiv.2306.13027
+
+[old-ff-doi]: https://doi.org/10.1021/acs.jpclett.7b00898
 
 [enhancing-reaxFF-database-repository]: https://github.com/paolodeangelis/Enhancing_ReaxFF_DFT_database
