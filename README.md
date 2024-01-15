@@ -17,7 +17,7 @@ The purpose of the set of notebooks is to facilitate the reparameterization Reax
 
 The database containing the simulation data from *ab initio* simulations obtained from this protocol is published in [Enhancing ReaxFF repository DFT Database][enhancing-reaxFF-database-repository].
 
-The Jupyter Notebooks provided here are designed to facilitate the configuration building, execution of DFT simulations, and optimization of the ReaxFF potential, as described in the workflow diagram shown below. To manage the complexity of the overall operation, we have divided the process into four main Jupyter Notebooks, , with an additional auxiliary notebook.
+The Jupyter Notebooks provided here are designed to facilitate the configuration building, execution of DFT simulations, and optimization of the ReaxFF potential, as described in the workflow diagram shown below. To manage the complexity of the overall operation, we have divided the process into four main Jupyter Notebooks, with an additional auxiliary notebook.
 
 
 ![workflow](assets/img/wf.png)
@@ -147,17 +147,19 @@ At the moment the contribution to this repository is closed since all the work i
 If you use the protocol or part of this repository for your work, please cite it using the following BibTeX entries:
 
 ```bibtex
-@article{deangelis2023enhancing,
-	title        = {Enhancing ReaxFF for Molecular Dynamics Simulations of Lithium-Ion Batteries: An interactive reparameterization protocol},
-	author       = {Paolo De Angelis and
-                  Roberta Cappabianca and
-                  Matteo Fasano and
-                  Pietro Asinari and
-                  Eliodoro Chiavazzo},
-	year         = 2023,
-	eprint       = {2306.13027},
-	archiveprefix = {arXiv},
-	primaryclass = {cond-mat.mtrl-sci}
+@article{deangelis2024enhancing,
+  title={Enhancing ReaxFF for molecular dynamics simulations of lithium-ion batteries: an interactive reparameterization protocol},
+  author={De Angelis, Paolo and
+          Cappabianca, Roberta and
+          Fasano, Matteo and
+          Asinari, Pietro and
+          Chiavazzo, Eliodoro},
+  journal={Scientific Reports},
+  volume={14},
+  number={1},
+  pages={978},
+  year={2024},
+  publisher={Nature Publishing Group UK London}
 }
 ```
 
@@ -216,7 +218,7 @@ The authors also acknowledge that the simulation results of this database have b
 
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
-[article-doi]: https://doi.org/10.48550/arXiv.2306.13027
+[article-doi]: https://doi.org/10.1038/s41598-023-50978-5
 
 [old-ff-doi]: https://doi.org/10.1021/acs.jpclett.7b00898
 
