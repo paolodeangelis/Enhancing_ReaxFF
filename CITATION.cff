@@ -1,22 +1,60 @@
 cff-version: 1.2.0
-message: "If you use the notebooks or the tools provided in this repository for your work, please cite it as below."
+title: Enhancing ReaxFF protocol
+message: >-
+  If you use this set of Jupyter Notebooks, please cite it using the
+  metadata from this file, and cite also the research article
+  https://doi.org/10.1038/s41598-023-50978-5
+type: dataset
 authors:
-  - family-names: De Angelis
-    given-names: Paolo
-    orcid: https://orcid.org/0000-0003-1866-2988
-  - family-names: Cappabianca
-    given-names: Roberta
-    orcid: https://orcid.org/0000-0002-3789-9676
-  - family-names: Fasano
-    given-names: Matteo
-    orcid: https://orcid.org/0000-0002-3997-3681
-  - family-names: Asinari
-    given-names: Pietro
-    orcid: https://orcid.org/0000-0003-1814-3846
-  - family-names: Chiavazzo
-    given-names: Pietro
-    orcid: https://orcid.org/0000-0001-6165-7434
-title: "Enhancing ReaxFF protocol"
-version: 1.0.0-alpha
+  - given-names: Paolo
+    family-names: De Angelis
+    email: paolo.deangelis@polito.it
+    affiliation: Politecnico di Torino
+    orcid: 'https://orcid.org/0000-0003-1866-2988'
+  - given-names: Roberta
+    family-names: Cappabianca
+    email: roberta.cappabianca@polito.it
+    affiliation: Politecnico di Torino
+    orcid: 'https://orcid.org/0000-0002-3789-9676'
+  - given-names: Matteo
+    family-names: Fasano
+    email: matteo.fasano@polito.it
+    affiliation: Politecnico di Torino
+    orcid: 'https://orcid.org/0000-0002-3997-3681'
+  - given-names: Pietro
+    family-names: Asinari
+    email: pietro.asinari@polito.it
+    affiliation: Politecnico di Torino
+    orcid: 'https://orcid.org/0000-0003-1814-3846'
+  - given-names: Eliodoro
+    family-names: Chiavazzo
+    email: eliodoro.chiavazzo@polito.it
+    affiliation: Politecnico di Torino
+    orcid: 'https://orcid.org/0000-0001-6165-7434'
+identifiers:
+  - type: doi
+    value: 10.1038/s41598-023-50978-5
+    description: >-
+      Research Article on Database production and
+      utilization
+  - type: doi
+    value: 10.5281/zenodo.7959121
+    description: Database zenodo permalink
+  - type: doi
+    value: 10.5281/zenodo.8036775
+    description: Protocol zenodo permalink
+repository-code: >-
+  https://github.com/paolodeangelis/Enhancing_ReaxFF_DFT_database
+repository: 'https://github.com/paolodeangelis/Enhancing_ReaxFF'
+abstract: >-
+  Protocol used to re-parametrize the ReaxFF
+  force field for LiF, an inorganic compound.
+keywords:
+  - Density Functional Theory
+  - Lithium-ion Battery
+  - Reactive Molecular Dynamics
+  - Solid Electrolyte Interphase
+license: CC-BY-4.0
+version: 1.0.0
 doi: 10.5281/zenodo.8036775
-date-released: 2023-05-22
+date-released: 2024-01-15
