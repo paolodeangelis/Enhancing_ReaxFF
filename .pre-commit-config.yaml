@@ -32,7 +32,7 @@ repos:
       - id: black
 
   - repo: https://github.com/asottile/blacken-docs
-    rev: 1.16.0
+    rev: 1.18.0
     hooks:
     -   id: blacken-docs
         additional_dependencies: [black==23.3.0]
@@ -52,7 +52,7 @@ repos:
       - id: flake8
 
   -   repo: https://github.com/pre-commit/mirrors-mypy
-      rev: 'v1.10.0'  # Use the sha / tag you want to point at
+      rev: 'v1.10.1'  # Use the sha / tag you want to point at
       hooks:
       -   id: mypy
           verbose: True
