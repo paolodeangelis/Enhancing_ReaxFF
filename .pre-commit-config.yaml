@@ -27,7 +27,7 @@ repos:
       - id: isort
 
   - repo: https://github.com/psf/black
-    rev: 24.4.2
+    rev: 24.8.0
     hooks:
       - id: black
 
@@ -38,7 +38,7 @@ repos:
         additional_dependencies: [black==23.3.0]
 
   - repo: https://github.com/nbQA-dev/nbQA
-    rev: 1.8.5
+    rev: 1.8.7
     hooks:
       - id: nbqa-black
       - id: nbqa-pyupgrade
@@ -47,12 +47,12 @@ repos:
       - id: nbqa-flake8
 
   - repo: https://github.com/PyCQA/flake8
-    rev: 7.1.0
+    rev: 7.1.1
     hooks:
       - id: flake8
 
   -   repo: https://github.com/pre-commit/mirrors-mypy
-      rev: 'v1.11.0'  # Use the sha / tag you want to point at
+      rev: 'v1.11.1'  # Use the sha / tag you want to point at
       hooks:
       -   id: mypy
           verbose: True
