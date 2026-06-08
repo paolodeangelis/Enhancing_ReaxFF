@@ -4,7 +4,7 @@ fail_fast: true
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -17,28 +17,28 @@ repos:
 
 
   - repo: https://github.com/asottile/pyupgrade
-    rev:  v3.18.0
+    rev:  v3.21.2
     hooks:
     -   id: pyupgrade
         args: [--py39-plus]
   - repo: https://github.com/PyCQA/isort
-    rev: 5.13.2
+    rev: 9.0.0a3
     hooks:
       - id: isort
 
-  - repo: https://github.com/psf/black
-    rev: 24.10.0
+  - repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 26.5.1
     hooks:
       - id: black
 
   - repo: https://github.com/asottile/blacken-docs
-    rev: 1.19.0
+    rev: 1.20.0
     hooks:
     -   id: blacken-docs
         additional_dependencies: [black==23.3.0]
 
   - repo: https://github.com/nbQA-dev/nbQA
-    rev: 1.8.7
+    rev: 1.9.1
     hooks:
       - id: nbqa-black
       - id: nbqa-pyupgrade
@@ -47,12 +47,12 @@ repos:
       - id: nbqa-flake8
 
   - repo: https://github.com/PyCQA/flake8
-    rev: 7.1.1
+    rev: 7.3.0
     hooks:
       - id: flake8
 
   -   repo: https://github.com/pre-commit/mirrors-mypy
-      rev: 'v1.11.2'  # Use the sha / tag you want to point at
+      rev: 'v2.1.0'  # Use the sha / tag you want to point at
       hooks:
       -   id: mypy
           verbose: True

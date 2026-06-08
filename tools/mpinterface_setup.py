@@ -32,11 +32,9 @@ def write_yaml(mpi_config_yaml, api_key=None):  # noqa: D103
     if api_key is None:
         api_key = "null"
     with open(mpi_config_yaml, "w") as file_:
-        file_.write(
-            f"""username: {os.getlogin( )}  # your UF HPC username
+        file_.write(f"""username: {os.getlogin( )}  # your UF HPC username
 mp_api: {api_key}  # your Materials Project API key
-                """
-        )
+                """)
 
 
 def main(api_key=None):  # noqa: D103
